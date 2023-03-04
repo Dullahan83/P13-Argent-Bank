@@ -1,0 +1,28 @@
+Components:
+-Header
+-Footer
+-Feature
+-Account ?
+-Transaction
+-Button
+-Page heading
+
+Pages:
+-index/home
+-sign-in
+-user/dashboard
+-profile
+
+Utilisation d'un layout contenant le Header,les children et le Footer  
+Réutilisation des classes déjà définies, donc css normal.
+
+Redux:
+-AuthReducer => state: isAuthentified ?
+- Actions : LogIn => LogOut
+
+Requêtes: utlisation d'axios
+-CreateUser: {email, password, firstName, lastName}
+-LogIn : changement du state redux
+-LogOut : changement du state redux
+-getUserProfile: {token}
+-updateUserProfile: {token}
