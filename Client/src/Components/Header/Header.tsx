@@ -2,13 +2,12 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import { useAppSelector, useAppDispatch } from "../../Redux/hook";
 import { logout } from "../../Redux/Slices/UserSlice";
-import { useDispatch } from "react-redux";
 interface Props {}
 
 function Header(props: Props) {
    const {} = props;
    const navigate = useNavigate();
-   const dispatch = useAppDispatch(); /* useDispatch(); */
+   const dispatch = useAppDispatch();
 
    const { isAuthenticated } = useAppSelector((store) => store.user);
    const { firstName } = useAppSelector((store) => store.user.userInfos);

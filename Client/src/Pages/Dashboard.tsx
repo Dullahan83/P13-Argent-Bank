@@ -65,7 +65,7 @@ function Dashboard(props: Props) {
                               placeholder={firstName}
                               aria-label="firstname"
                               className="edit-form-input"
-                              value={firstName}
+                              value={firstname}
                               onChange={(e) =>
                                  setFirstname(
                                     e.target.value.trim().length
@@ -79,7 +79,7 @@ function Dashboard(props: Props) {
                               placeholder={lastName}
                               aria-label="lastname"
                               className="edit-form-input"
-                              value={lastName}
+                              value={lastname}
                               onChange={(e) =>
                                  setLastname(
                                     e.target.value.trim().length
